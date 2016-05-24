@@ -1,3 +1,3 @@
 # algos
 
-hey guys people suck
+Practicing algorithms and data structures in python
