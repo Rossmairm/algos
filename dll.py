@@ -2,18 +2,25 @@
 
 class Node(object):
 
-    def __init__(self, data=None, next_node=None):
+    def __init__(self, data=None, previous_node=None, next_node=None):
         self.data = data
+        self.previous_node=previous_node
         self.next_node = next_node
 
     def get_data(self):
         return self.data
+
+    def get_prev(self):
+        return self.previous_node
 
     def get_next(self):
         return self.next_node
 
     def set_next(self, new_next):
         self.next_node = new_next
+
+    def set_prev(self, new_prev):
+        self.previous_node = new_prev
 
 class LinkedList(object):
     def __init__(self, head=None):
@@ -85,4 +92,4 @@ def main():
         else:
             print("invaild entry")
 if __name__=="__main__":
-   )
+    main()
